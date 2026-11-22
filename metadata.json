@@ -1,0 +1,6 @@
+{
+  "name": "TutorFlow AI",
+  "description": "The One-Person Back Office — AI-powered financial operations, invoicing, payment follow-up, and 30/60/90-day cash flow forecasting for independent tutors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

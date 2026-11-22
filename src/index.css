@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F7F8FC;
+    color: #171923;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.fintech-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAECF2;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(23, 25, 35, 0.03);
+}
+
+.fintech-card-hover {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms ease;
+}
+
+.fintech-card-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(23, 25, 35, 0.05);
+  border-color: #DDE1EC;
+}
+
+/* Clean light scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F8FC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6DAE6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8BFCE;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #171923 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only-area {
+    background: #ffffff !important;
+    color: #171923 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
