@@ -10,8 +10,6 @@
 [![Express](https://img.shields.io/badge/Express-4-black.svg?logo=express)](https://expressjs.com/)
 [![Gemini](https://img.shields.io/badge/Gemini_API-2.5_Flash-orange.svg?logo=google)](https://ai.google.dev/)
 
----
-
 ## 📌 Problem Statement
 
 Independent tutors in India spend hours juggling Excel sheets, registers, and WhatsApp chats to track tuition fees. Without dedicated accounting staff, they struggle with:
@@ -22,8 +20,6 @@ Independent tutors in India spend hours juggling Excel sheets, registers, and Wh
 
 **TutorFlow AI** solves this with an intuitive, unified financial dashboard powered by deterministic cash modeling and AI assistants.
 
----
-
 ## 💡 The 5 Core Questions TutorFlow AI Answers
 
 | # | Question | How TutorFlow AI Solves It |
@@ -33,8 +29,6 @@ Independent tutors in India spend hours juggling Excel sheets, registers, and Wh
 | 3 | **When should I follow up?** | Prioritized **Action Center** + bilingual **AI Payment Reminder Assistant** (English & Hindi) with 1-click WhatsApp links. |
 | 4 | **Will I have enough cash for the next 30–90 days?** | Deterministic 30/60/90-day cash flow engine separating confirmed cash from projected recurring tuition. |
 | 5 | **What happens if a student pays late?** | Interactive **What-If Scenario Simulator** (7/15/30-day payment delays + added expenses) showing exact shortfall dates and cash curves. |
-
----
 
 ## 🚀 Key Features
 
@@ -71,17 +65,13 @@ Independent tutors in India spend hours juggling Excel sheets, registers, and Wh
 ### ⚡ 7. AI Action Center & Copilot
 - **Action Center**: Prioritized operational tasks (`Critical`, `High`, `Medium`, `Low`) with quick-action shortcuts.
 - **TutorFlow Copilot**: AI conversational assistant strictly grounded in your studio's live financial data—no hallucinations, only verified numbers.
-
----
-
+  
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS v4, Lucide Icons, Recharts, Motion (Framer Motion)
 - **Backend**: Node.js, Express.js REST API (`/api/*`), tsx runner
 - **Database / Storage**: Persistent JSON file-based database (`data/tutorflow-db.json`) with client-side state synchronization
 - **AI Engine**: Google Gemini API (`@google/genai` SDK) with robust deterministic fallbacks
-
----
 
 ## 📁 Project Structure
 
@@ -112,8 +102,6 @@ tutorflow-ai/
 ├── tsconfig.json            # TypeScript configuration
 └── vite.config.ts           # Vite build configuration
 ```
-
----
 
 ## ⚡ Getting Started
 
@@ -160,8 +148,6 @@ npm run build
 npm start
 ```
 
----
-
 ## 🧪 Realistic Demo Data Included
 
 TutorFlow AI comes pre-configured with a realistic sample dataset to explore all features instantly:
@@ -172,8 +158,6 @@ TutorFlow AI comes pre-configured with a realistic sample dataset to explore all
 - **Configured Starting Cash** (₹10,500) calibrated to showcase shortfall simulations when fees are delayed.
 
 *You can restore this dataset at any time via **Settings → Reset Demo Data**.*
-
----
 
 ## 📄 License
 
