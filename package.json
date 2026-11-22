@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "start": "node server.ts",
     "build": "vite build",
+    "start": "NODE_ENV=production tsx server.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"
@@ -34,5 +34,18 @@
     "tsx": "^4.21.0",
     "typescript": "^7.0.2",
     "@types/express": "^4.17.21"
-  }
+  },
+  "description": "> **One tutor. One dashboard. Complete financial control.**   > Built for independent home tutors and small coaching studios (10–100 students) operating in INR (₹) without accounting or administrative staff.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanya-garg10/tutorflow-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanya-garg10/tutorflow-ai/issues"
+  },
+  "homepage": "https://github.com/Tanya-garg10/tutorflow-ai#readme"
 }
