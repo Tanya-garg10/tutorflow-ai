@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Bot, Send, Sparkles, User } from 'lucide-react';
 import { api } from '../../services/api.ts';
+import { FormattedText } from '../ui/FormattedText.tsx';
 
 interface ChatMessage {
   id: string;
@@ -131,13 +132,17 @@ export function CopilotView() {
               )}
 
               <div
-                className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
+                className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   msg.role === 'user'
-                    ? 'bg-[#7257E8] text-white'
+                    ? 'bg-[#7257E8] text-white whitespace-pre-line'
                     : 'bg-[#F7F8FC] border border-[#EAECF2] text-[#171923]'
                 }`}
               >
-                {msg.content}
+                {msg.role === 'user' ? (
+                  msg.content
+                ) : (
+                  <FormattedText content={msg.content} />
+                )}
                 {msg.role === 'assistant' && msg.source && (
                   <div className="text-[10px] text-[#717789] mt-2 pt-1.5 border-t border-[#EAECF2]">
                     {msg.source === 'gemini'

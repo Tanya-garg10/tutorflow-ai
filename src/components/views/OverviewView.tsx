@@ -39,6 +39,7 @@ import {
 } from '../../services/financeEngine.ts';
 import { api } from '../../services/api.ts';
 import { StatusText } from '../ui/StatusText.tsx';
+import { FormattedText } from '../ui/FormattedText.tsx';
 
 interface OverviewViewProps {
   db: AppDatabase;
@@ -718,7 +719,11 @@ export function OverviewView({
             </div>
 
             <div className="p-4 rounded-xl bg-[#F7F8FC] border border-[#EAECF2] text-sm text-[#171923] leading-relaxed">
-              {healthText || 'Analyzing live receivables and upcoming expenses...'}
+              {healthText ? (
+                <FormattedText content={healthText} />
+              ) : (
+                'Analyzing live receivables and upcoming expenses...'
+              )}
             </div>
           </div>
 
